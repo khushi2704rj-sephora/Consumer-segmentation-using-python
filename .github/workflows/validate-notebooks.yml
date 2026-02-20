@@ -1,0 +1,44 @@
+name: Validate Notebooks
+
+on:
+  push:
+    branches: [main]
+    paths: ['**/*.ipynb', 'requirements.txt']
+  pull_request:
+    branches: [main]
+    paths: ['**/*.ipynb', 'requirements.txt']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install nbformat
+
+      - name: Validate notebook structure
+        run: |
+          python -c "
+          import nbformat, glob, sys
+          errors = []
+          for nb_path in glob.glob('notebooks/**/*.ipynb', recursive=True):
+              try:
+                  with open(nb_path) as f:
+                      nbformat.read(f, as_version=4)
+                  print(f'✓ {nb_path}')
+              except Exception as e:
+                  errors.append(f'✗ {nb_path}: {e}')
+                  print(f'✗ {nb_path}: {e}')
+          if errors:
+              sys.exit(1)
+          print('All notebooks valid!')
+          "
