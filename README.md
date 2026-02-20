@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving<img src="assets/banner.svg" alt="Banner" width="100%">color=0:0d1117,50:1a4a2a,100:27ae60<img src="assets/banner.svg" alt="Banner" width="100%">height=220<img src="assets/banner.svg" alt="Banner" width="100%">section=header<img src="assets/banner.svg" alt="Banner" width="100%">text=Customer%20Segmentation<img src="assets/banner.svg" alt="Banner" width="100%">fontSize=42<img src="assets/banner.svg" alt="Banner" width="100%">fontColor=ffffff<img src="assets/banner.svg" alt="Banner" width="100%">animation=fadeIn<img src="assets/banner.svg" alt="Banner" width="100%">fontAlignY=35<img src="assets/banner.svg" alt="Banner" width="100%">desc=K-Means%20Clustering%20%7C%20PCA%20%7C%20Marketing%20Analytics%20%7C%20Python<img src="assets/banner.svg" alt="Banner" width="100%">descSize=16<img src="assets/banner.svg" alt="Banner" width="100%">descAlignY=55<img src="assets/banner.svg" alt="Banner" width="100%">descColor=cccccc" alt="Banner" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a4a2a,100:27ae60&height=220&section=header&text=Customer%20Segmentation&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=K-Means%20Clustering%20%7C%20PCA%20%7C%20Marketing%20Analytics%20%7C%20Python&descSize=16&descAlignY=55&descColor=cccccc" alt="Banner" width="100%">
 
 </div>
 
