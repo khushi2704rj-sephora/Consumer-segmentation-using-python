@@ -12,6 +12,10 @@
 
 **A data-driven clustering analysis to identify distinct customer segments and optimize marketing ROI using K-Means and PCA.**
 
+---
+
+[🎯 Summary](#-executive-summary) · [📊 Insights](#-key-insights) · [🏗️ Methodology](#️-methodology) · [📂 Structure](#-repository-structure) · [🚀 Quick Start](#-quick-start) · [🤝 Contributing](#-contributing)
+
 </div>
 
 ---
@@ -47,6 +51,16 @@ pie title Customer Segments vs. Revenue Impact
 
 ## 🏗️ Methodology
 
+```mermaid
+flowchart LR
+    A["📦 Raw Data\n200 Customers"] --> B["🧹 Preprocessing\nStandardScaler"]
+    B --> C["📊 Elbow Method\nOptimal K"]
+    C --> D["🎯 K-Means\nClustering\nK=4"]
+    D --> E["🔍 Silhouette\nValidation\nScore=0.55"]
+    E --> F["📉 PCA\n2D Visualization"]
+    F --> G["💰 Business\nRecommendations"]
+```
+
 ### 1. Data Preprocessing
 - **Dataset**: [Mall Customers](data/Mall_Customers.csv) (200 records)
 - **Features**: Age, Gender, Annual Income (k$), Spending Score (1-100)
@@ -58,6 +72,15 @@ pie title Customer Segments vs. Revenue Impact
     - **Elbow Method**: Identified inflection point at K=4.
     - **Silhouette Score**: Peaked at 0.55 for K=4, indicating dense, well-separated clusters.
 - **Dimensionality Reduction**: PCA (Principal Component Analysis) used for 2D visualization of clusters.
+
+### 3. Cluster Profiles
+
+| Cluster | Label | Avg Income | Avg Spend | % of Customers | Actionable Insight |
+|---|---|---|---|---|---|
+| 0 | 💎 **Premium** | $85K | 82/100 | 21% | High-value VIPs — prioritize retention |
+| 1 | 🛠️ **Mid-Range** | $55K | 50/100 | 35% | Stable base — loyalty program candidates |
+| 2 | 🌟 **Occasional** | $25K | 75/100 | 22% | Impulse spenders — upsell opportunities |
+| 3 | 📦 **Budget** | $30K | 20/100 | 22% | Price-sensitive — value bundles & promos |
 
 ---
 
@@ -114,6 +137,14 @@ Contributions are welcome! Please check the [Contribution Guidelines](CONTRIBUTI
 
 <div align="center">
 
-**Built with ❤️ for Data Science**
+### 👩‍💻 Author
+
+**Khushi Kothari**
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/khushi2704rj-sephora)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khushi-kothari--/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:khushi2704.ak@gmail.com)
+
+*MSc Business Analytics · Customer Analytics & Segmentation*
 
 </div>
