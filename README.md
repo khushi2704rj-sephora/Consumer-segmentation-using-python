@@ -1,3 +1,5 @@
+[![Validate Notebooks](https://github.com/khushi2704rj-sephora/Consumer-segmentation-using-python/actions/workflows/validate-notebooks.yml/badge.svg)](https://github.com/khushi2704rj-sephora/Consumer-segmentation-using-python/actions/workflows/validate-notebooks.yml)
+
 <div align="center">
 
 # 🛍️ Customer Segmentation & Value-Based Profiling
