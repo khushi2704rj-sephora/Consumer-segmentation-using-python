@@ -2,6 +2,13 @@
 
 <div align="center">
 
+<img src="assets/banner.svg" alt="Banner" width="100%">
+
+</div>
+
+
+<div align="center">
+
 # 🛍️ Customer Segmentation & Value-Based Profiling
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
